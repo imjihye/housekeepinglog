@@ -9,9 +9,9 @@ npm update -g express-generator
 express [dirname]
 ```
 
-## mongodb directory
+## mongodb 
 ```sh
-mkdir data
+npm install mongodb monk -S
 ```
 
 # coding
@@ -56,4 +56,5 @@ mongo
 > show tables or show collections or db.getCollectionNames()
 ```
 - ref : https://www.tutorialspoint.com/mongodb/
+
 ## index.js

@@ -7,10 +7,10 @@ var bodyParser = require('body-parser');
 
 var mongo = require('mongodb');
 var monk = require('monk');
-var db = monk('jihye-toy.me:27017/housekeepinglogg');
+var db = monk('jihye-toy.me:27017/housekeepinglog');
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
+var housekeepinglog = require('./routes/housekeepinglogg');
 
 var app = express();
 
@@ -31,7 +31,7 @@ app.use(function(req, res, next){
   next();
 });
 app.use('/', routes);
-app.use('/users', users);
+app.use('/housekeepinglog', housekeepinglog);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
