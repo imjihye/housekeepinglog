@@ -8,20 +8,20 @@ block content
 		div
 			h2 Info
 			p#info
-				strong Date:
-				span#date
+				strong Date: 
+				span(data-name='date')
 				br
-				Strong Name:
-				span#name
+				Strong Name: 
+				span(data-name='name')
 				br
-				Strong Price:
-				span#price
+				Strong Price: 
+				span(data-name='price')
 				br
-				Strong Payment Type:
-				span#paymentType
+				Strong Payment Type: 
+				span(data-name='paymentType')
 				br
-				Strong Desc:
-				span#desc
+				Strong Desc: 
+				span(data-name='desc')
 
 		div
 			h2 List
@@ -30,19 +30,20 @@ block content
 					th Date
 					th Name
 					th Price
+					th Delete?
 				tbody
 
 		div
 			h2 Add
-			fieldset#add
-				input#date(type='text', placeholder='date')
-				input#name(type='text', placeholder='name')
+			fieldset#fieldset
+				input(type='text', placeholder='date', data-name='date')
+				input(type='text', placeholder='name', data-name='name')
 				br
-				input#price(type='text', placeholder='price')
-				input#paymentType(type='text', placeholder='paymentType')
+				input(type='text', placeholder='price', data-name='price')
+				input(type='text', placeholder='paymentType', data-name='paymentType')
 				br
-				input#desc(type='text', placeholder='desc')
+				input(type='text', placeholder='desc', data-name='desc')
 				br
-				button#add Add
+				button#add(type='submit') Add
 
 

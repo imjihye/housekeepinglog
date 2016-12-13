@@ -10,7 +10,7 @@ var monk = require('monk');
 var db = monk('jihye-toy.me:27017/housekeepinglog');
 
 var routes = require('./routes/index');
-var housekeepinglog = require('./routes/housekeepinglogg');
+var housekeepinglog = require('./routes/housekeepinglog');
 
 var app = express();
 
