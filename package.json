@@ -4,20 +4,23 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "lint": "eslint --init && eslint global.js"
+    "lint": "eslint --init && eslint global.js",
+    "test": "node_modules/.bin/mocha --recursive -w"
   },
   "dependencies": {
+    "@risingstack/trace": "^2.36.0",
     "body-parser": "~1.13.2",
     "cookie-parser": "~1.3.5",
     "debug": "~2.2.0",
     "express": "~4.13.1",
     "jade": "~1.11.0",
-    "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0",
     "mongodb": "^1.4.4",
-    "monk": "^1.0.1"
+    "monk": "^1.0.1",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
-    "eslint": "^3.12.1"
+    "eslint": "^3.12.1",
+    "supertest": "^2.0.1"
   }
 }

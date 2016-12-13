@@ -1,3 +1,7 @@
+require('@risingstack/trace');
+
+// your application's code
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
